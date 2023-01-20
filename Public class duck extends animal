@@ -1,0 +1,20 @@
+public class Duck extends Animal{
+
+	private String breed;
+	
+	public Duck (String name, double weight, String breed){
+		super(name,weight);
+		this.breed=breed;
+	}
+
+	@Override
+	public String makesound(){
+		// TODO: Implement this method
+		return "Quack!Quack!";
+	}
+    public String getBreed(){
+		return breed;
+	}
+	public void setBreed(String breed){
+		this.breed=breed;
+	}
