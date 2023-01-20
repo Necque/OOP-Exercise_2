@@ -1,0 +1,22 @@
+public class Chicken extends Animal{
+	private String farm;
+	
+	public Chicken (String Name, double weight, String farm){
+		super(Name,weight);
+		this.farm=farm;
+	}
+
+	@Override
+	public String makesound()
+	{
+		// TODO: Implement this method
+		return "Toktoga-ok!Toktoga-ok!";
+	}
+	public String getBreed(){
+		return farm;
+	}
+	
+	public void setFarm(String farm){
+		this.farm=farm;
+	}
+}
